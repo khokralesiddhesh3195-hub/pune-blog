@@ -1,0 +1,29 @@
+:root{--bg:#eef2ee;--ink:#1f2629;--mute:#56625e;--green:#2f6b4f;--sky:#cfe3dc;--rock:#2b3235;--gold:#d99a1e;--wall:#8a6a4f;--card:#fff;--line:#cdd7d1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a18;--ink:#e6ece8;--mute:#9fb0a8;--green:#5fb58c;--sky:#23352f;--rock:#0d1110;--gold:#e8b445;--wall:#a98565;--card:#1b2321;--line:#2f3b37}}
+:root[data-theme="dark"]{--bg:#141a18;--ink:#e6ece8;--mute:#9fb0a8;--green:#5fb58c;--sky:#23352f;--rock:#0d1110;--gold:#e8b445;--wall:#a98565;--card:#1b2321;--line:#2f3b37}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 "Source Sans 3",system-ui,sans-serif}
+h1,h2{font-family:Bitter,Georgia,serif;line-height:1.2;margin:0}
+header{padding:56px 20px 40px;max-width:760px;margin:0 auto}
+header p.by{color:var(--mute);font-size:15px;margin:0 0 14px}
+h1{font-size:clamp(34px,7vw,56px);font-weight:700;letter-spacing:-.01em}
+.lede{font-size:20px;color:var(--mute);margin:18px 0 0}
+main{max-width:760px;margin:0 auto;padding:0 20px 40px}
+.toc{border-left:4px solid var(--green);padding:4px 0 4px 16px;margin:0 0 40px;font-size:16px}
+.toc a{color:var(--green);text-decoration:none;display:block;padding:2px 0}
+.toc a:hover,.toc a:focus-visible{text-decoration:underline}
+article{margin:0 0 56px}
+h2{font-size:clamp(26px,5vw,34px);margin:0 0 14px}
+figure{margin:0 0 18px}
+figure img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
+figure svg{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
+figcaption{font-size:14px;color:var(--mute);margin-top:6px}
+.facts{font-size:16px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px;margin-top:14px}
+.facts b{color:var(--ink)}
+p{margin:0 0 14px}
+footer{background:var(--rock);color:#cfd8d3;padding:32px 20px;font-size:15px}
+footer div{max-width:760px;margin:0 auto}
+.sky{fill:var(--sky)}.g{fill:var(--green)}.r{fill:var(--rock)}.w{fill:var(--wall)}.y{fill:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
